@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Linux Control Ultra
+Comment=Configuracion super avanzada del sistema Linux
+Exec="/home/matias/Escritorio/apps ISOS/Configuracion avanzada/dist/LinuxControlUltra/LinuxControlUltra"
+Icon=preferences-system
+Terminal=false
+Categories=System;Settings;

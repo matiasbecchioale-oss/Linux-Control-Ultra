@@ -1,0 +1,12 @@
+{
+  "name": "Laptop Gamer",
+  "app": "Linux Control Ultra",
+  "values": {
+    "cpu.governor": "performance",
+    "vm.swappiness": 10,
+    "net.tcp_congestion_control": "bbr",
+    "storage.trim": true,
+    "services.bluetooth": true,
+    "containers.rootless": true
+  }
+}

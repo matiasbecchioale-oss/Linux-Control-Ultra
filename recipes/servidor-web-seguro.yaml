@@ -1,0 +1,9 @@
+name: Servidor Web Seguro
+app: Linux Control Ultra
+values:
+  security.dmesg_restrict: true
+  security.ptrace_scope: "2"
+  services.bluetooth: false
+  storage.trim: true
+  net.tcp_congestion_control: bbr
+  vm.swappiness: 10

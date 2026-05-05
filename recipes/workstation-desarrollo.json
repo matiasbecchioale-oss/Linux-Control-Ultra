@@ -1,0 +1,12 @@
+{
+  "name": "Workstation de Desarrollo",
+  "app": "Linux Control Ultra",
+  "values": {
+    "cpu.governor": "schedutil",
+    "vm.swappiness": 20,
+    "containers.rootless": true,
+    "storage.trim": true,
+    "services.bluetooth": false,
+    "net.tcp_congestion_control": "bbr"
+  }
+}

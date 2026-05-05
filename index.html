@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuracion Avanzada Linux</title>
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark"><i data-lucide="terminal-square"></i></div>
+          <div>
+            <strong>Linux Control</strong>
+            <span>Configuracion avanzada</span>
+          </div>
+        </div>
+
+        <label class="search">
+          <i data-lucide="search"></i>
+          <input id="searchInput" type="search" placeholder="Buscar ajustes, comandos, servicios..." />
+        </label>
+
+        <nav class="module-list" id="moduleList" aria-label="Modulos de configuracion"></nav>
+
+        <div class="profile-box">
+          <div>
+            <span class="label">Perfil activo</span>
+            <strong id="profileName">Equilibrado</strong>
+          </div>
+          <button class="icon-button" id="cycleProfile" title="Cambiar perfil">
+            <i data-lucide="shuffle"></i>
+          </button>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="moduleEyebrow">Sistema</p>
+            <h1 id="moduleTitle">Panel general</h1>
+          </div>
+          <div class="top-actions">
+            <button class="ghost-button" id="exportPlan">
+              <i data-lucide="download"></i>
+              Exportar plan
+            </button>
+            <button class="primary-button" id="applyChanges">
+              <i data-lucide="shield-check"></i>
+              Aplicar cambios
+            </button>
+          </div>
+        </header>
+
+        <section class="status-grid" aria-label="Estado del sistema">
+          <article>
+            <i data-lucide="cpu"></i>
+            <div>
+              <span>CPU governor</span>
+              <strong id="cpuState">schedutil</strong>
+            </div>
+          </article>
+          <article>
+            <i data-lucide="memory-stick"></i>
+            <div>
+              <span>Swappiness</span>
+              <strong id="swapState">20</strong>
+            </div>
+          </article>
+          <article>
+            <i data-lucide="lock-keyhole"></i>
+            <div>
+              <span>Endurecimiento</span>
+              <strong id="securityState">Alto</strong>
+            </div>
+          </article>
+          <article>
+            <i data-lucide="activity"></i>
+            <div>
+              <span>Cambios pendientes</span>
+              <strong id="changeCount">0</strong>
+            </div>
+          </article>
+        </section>
+
+        <div class="content-layout">
+          <section class="settings-panel" id="settingsPanel" aria-live="polite"></section>
+
+          <aside class="inspector">
+            <div class="inspector-head">
+              <div>
+                <span class="label">Plan generado</span>
+                <strong id="planTitle">Sin cambios</strong>
+              </div>
+              <button class="icon-button" id="copyCommands" title="Copiar comandos">
+                <i data-lucide="copy"></i>
+              </button>
+            </div>
+            <pre id="commandPreview"># Ajusta controles para generar comandos seguros.</pre>
+
+            <div class="pending">
+              <div class="pending-title">
+                <i data-lucide="list-checks"></i>
+                <strong>Cambios</strong>
+              </div>
+              <ul id="pendingList">
+                <li>No hay cambios pendientes.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
