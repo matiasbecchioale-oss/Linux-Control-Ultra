@@ -43,7 +43,7 @@
 ## 🚀 Instalación rápida
 1. Clona el repositorio:
    ```bash
-   git clone [https://github.com/matiasbecchioale-oss/Linux-Control-Ultra.git](https://github.com/matiasbecchioale-oss/Linux-Control-Ultra.git)
+   git clone https://github.com/matiasbecchioale-oss/Linux-Control-Ultra
    ```
 2. Ejecuta el script principal:
    ```bash
